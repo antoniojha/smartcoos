@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smartcoos</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header align="center"> 
+    <%=render "layouts/header"%>
+  </header>
+  <div style="overflow: scroll;">
+    <div class="col-md-2" align="center">
+
+    </div>
+    <div class="col-md-8" align="center">
+
+      <%= yield %>
+    </div>
+    <div class="col-md-2" align="center">
+
+    </div>
+  </div>
+</body>
+</html>
