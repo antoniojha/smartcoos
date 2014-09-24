@@ -27,8 +27,8 @@
         <h4>Try it out. Pick a language.</h4><br>
         <table>
           <tr>
-            <td width="50%"><%=button_to 'english', 'http://smartcoos.com/a/user/register/en', :class=>"btn btn-primary"%></td>
-            <td width="50%"><%=button_to 'spanish','http://smartcoos.com/a/user/register/sp',:class=>"btn btn-primary"%></td>
+            <td width="50%"><%=button_to 'english', 'http://smartcoos.com/a/user/register/en', :class=>"btn btn-primary",:method => :get%></td>
+            <td width="50%"><%=button_to 'spanish','http://smartcoos.com/a/user/register/sp',:class=>"btn btn-primary",:method => :get%></td>
           </tr>
         </table>
       </div>

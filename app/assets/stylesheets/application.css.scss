@@ -25,8 +25,12 @@
 .navbar li a:link, .navbar li a:visited{
     color: #000000;
     text-align:center;
-}
 
+}
+.navbar li .button{
+    padding-left:10px;
+    padding-right:10px;  
+}
 .navbar li a:hover{
   color: #000000 !important;
   text-decoration: underline;

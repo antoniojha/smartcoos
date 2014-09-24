@@ -2,14 +2,22 @@
   <div class="navbar-inner">               
     <div class="container">
       <div class="collapse navbar-collapse nav-center">
-        <ul class="nav navbar-nav pull-right">       
+        <ul class="nav navbar-nav pull-left">
           <li class="logo"><span style="color:purple;">Smart</span><span style="color:blue;">Coos</span></li>
-          <li><a href="#">GET FULL ACCESS NOW </a></li>
-          <li><a href="#">Gift Subscription</a></li>
-          <li><%=button_to 'REGISTER', '#', :class=>"btn btn-primary"%></li>
-          <li><%=button_to 'LOGIN', '#', :class=>"btn btn-primary"%> </li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">       
+          
+          <li><a href="http://smartcoos.com/a/en/store/products/view">GET FULL ACCESS NOW </a></li>
+          <li><a href="http://smartcoos.com/a/store/giftproducts/view">Gift Subscription</a></li>
+          <li>
+            <%=button_to 'REGISTER', 'http://smartcoos.com/a/user/register', :class=>"btn btn-primary",:method => :get%>
+          </li>
+          <li>&nbsp;&nbsp;&nbsp;</li>
+          <li>
+            <%=button_to 'LOGIN', 'http://smartcoos.com/a/en/user/login', :class=>"btn btn-primary", :method => :get%>
+          </li>
         </ul>        
-        <ul class="nav navbar-nav"> 
+        <ul class="nav navbar-nav pull-right"> 
           
           <li><a href="#">Home</a></li>
           <li><a href="#">See It In Action</a></li>
