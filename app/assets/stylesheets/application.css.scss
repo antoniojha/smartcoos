@@ -27,9 +27,8 @@
     text-align:center;
 
 }
-.navbar li .button{
-    padding-left:10px;
-    padding-right:10px;  
+.button{
+    padding-top:10px;
 }
 .navbar li a:hover{
   color: #000000 !important;
@@ -45,14 +44,13 @@
   
 }
 #ad{
-  border-style:groove;
-  
+  border-style:groove;  
 }
-.nav-center .nav {
-    margin:0;
-
-}
-.navbar-inner{
-  display: inline-block;
-    text-align:center;
-}
+ .footer{
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
