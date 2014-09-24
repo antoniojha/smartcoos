@@ -1,20 +1,25 @@
-<nav class="navbar navbar-default navbar-fixed-top role=navigation">
-  <div class="navbar-inner">                    
-    <div class="container" align="left">
-      
-      <ul class="nav navbar-nav pull-right">
-        <li>
-          <a><h2><span style="color:purple;">Smart</span><span style="color:blue;">Coos</span></h2></a>
-      </li>
-        <li><a href="#">This is smart coos</a></li>
-        <li><a href="#">Our Languages</a></li>
-        <li><a href="#">Our App</a></li>
-        <li><a href="#">Our Books</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
-       
+<nav id="header" class="navbar navbar-default navbar-static-top role=navigation">
+  <div class="navbar-inner">               
+    <div class="container">
+      <div class="collapse navbar-collapse nav-center">
+        <ul class="nav navbar-nav pull-right">       
+          <li class="logo"><span style="color:purple;">Smart</span><span style="color:blue;">Coos</span></li>
+          <li><a href="#">GET FULL ACCESS NOW </a></li>
+          <li><a href="#">Gift Subscription</a></li>
+          <li><%=button_to 'REGISTER', '#', :class=>"btn btn-primary"%></li>
+          <li><%=button_to 'LOGIN', '#', :class=>"btn btn-primary"%> </li>
+        </ul>        
+        <ul class="nav navbar-nav"> 
+          
+          <li><a href="#">Home</a></li>
+          <li><a href="#">See It In Action</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Becoming a Teacher</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Term</a></li>
+          <li><a href="#">Policy</a></li>
+        </ul>
+      </div> 
     </div>
   </div>
 </nav>

@@ -17,7 +17,38 @@
 @import "bootstrap";
 
 .logo{
-  vertical-align: middle;
-  margin-top:2em;
- // font-size: 1.7em;
+ // vertical-align: middle;
+  //margin-top:10px;
+ // padding-top: 10px;
+  font-size: 2.7em;
+}
+.navbar li a:link, .navbar li a:visited{
+    color: #000000;
+    text-align:center;
+}
+
+.navbar li a:hover{
+  color: #000000 !important;
+  text-decoration: underline;
+}
+.navbar{
+  min-height:60px;
+  padding-top: 30px;
+  //padding-left:100px;
+}
+.blank{
+  height: 20px;
+  
+}
+#ad{
+  border-style:groove;
+  
+}
+.nav-center .nav {
+    margin:0;
+
+}
+.navbar-inner{
+  display: inline-block;
+    text-align:center;
 }
