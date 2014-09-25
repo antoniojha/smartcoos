@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+<script type="text/javascript">
 
+</script>
 <head>
   <title>Smartcoos</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -11,6 +13,7 @@
   <header align="center"> 
     <%=render "layouts/header"%>
   </header>
+  <div id="myTimeline"></div>
     <div class="row">
       <div class="col-md-2" align="center">
       </div>
@@ -56,6 +59,9 @@
       </div>
         
     </div>
+    <div class="row">
+      <div class="blank"></div>
+    </div>
     <footer>
       <%=render "layouts/footer"%>      
     </footer>
@@ -65,7 +71,7 @@
   // Load the IFrame Player API code asynchronously.
 
   var parentwidth = document.getElementById("left-frame").offsetWidth;
-  document.getElementById("ad").setAttribute("style","height:"+String(parentwidth/1.7)+"px;");
+  document.getElementById("ad").setAttribute("style","height:"+String(parentwidth/1.8)+"px;");
   var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/player_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -76,10 +82,11 @@
   var player;
   function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
-      height: String(parentwidth/1.7),
+      height: String(parentwidth/1.8),
       width: '100%',
       videoId: 'QX_X3hlaahk'
     });
   }
   $(document).on('page:load',onYouTubePlayerAPIReady);
+
 </script>    
