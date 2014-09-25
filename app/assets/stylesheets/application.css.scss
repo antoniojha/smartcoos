@@ -25,7 +25,6 @@
 .navbar li a:link, .navbar li a:visited{
     color: #000000;
     text-align:center;
-
 }
 .button{
     padding-top:10px;
@@ -35,18 +34,50 @@
   text-decoration: underline;
 }
 .navbar{
-  min-height:60px;
-  padding-top: 30px;
+  min-height:40px;
+ // padding-top: 30px;
   //padding-left:100px;
 }
+#header{
+  padding-top: 10px;
+}
 .blank{
-  height: 20px;
-  
+  height: 10px;
 }
 #ad{
   border-style:groove;  
 }
+#dropup-button{
+  border-width:0px;
+}
+#dropup-button:hover{
+   background-color: transparent !important;
+  text-decoration: underline;
+}
+.panel{
+  border-style:solid;
+  border-color:#428bca;
+  border-width: 3px;
+  margin-top: -2px;
+  border-radius: 20px;
+  padding-top:20px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:20px;
+}
+
+.blue a{
+    background-color: #428bca !important;
+}
  .footer{
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+ .nav-pills{
     width: 100%;
     text-align: center;
     > li {

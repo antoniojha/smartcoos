@@ -11,14 +11,12 @@
   <header align="center"> 
     <%=render "layouts/header"%>
   </header>
-
-    <div class="col-md-2" align="center">
-
-    </div>
-    <div style="display:block;">
+    <div class="row">
+      <div class="col-md-2" align="center">
+      </div>
       <div id="left-frame" class="col-md-4" align="left">
         <div class="blank"></div>
-        <div id="ytplayer"></div>
+        <div id="ytplayer"></div>        
       </div>
       <div id="right-frame" class="col-md-4" align="left">
         <div class="blank"></div>
@@ -31,15 +29,33 @@
               <td width="50%"><%=button_to 'spanish','http://smartcoos.com/a/user/register/sp',:class=>"btn btn-primary",:method => :get%></td>
             </tr>
           </table>
-        </div>
-        <%= yield %>
-        where is the text?
+        </div>      
       </div>
       <div class="col-md-2" align="center">
+      </div>
+      <%= yield %>
+    </div>
+    <div class="row">        
+
+      <div class="col-md-4" align="center">
+      </div>
+      <div class="col-md-4" align="center">
+        
+        <ul class="nav nav-pills blue" role="tablist">
+          <li class="active"><a href="#">Testimonial</a></li>
+        </ul>
+        <div class="panel panel-default">
+          My child is learning a second and third language from a native speaker at my convenience. Because he is starting so early with Smart Coos, he gets the chance to speak like a native and benefits from the higher thinking skills that comes with early exposure.<br><br>
+          <div align="right">
+          <span style="text-decoration: underline;">Regina P., Palm Beach, Florida</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" align="center">
 
       </div>
+        
     </div>
-    <div class="well well-lg">Testimonial</div>
     <footer>
       <%=render "layouts/footer"%>      
     </footer>
@@ -47,9 +63,9 @@
 </html>
 <script>
   // Load the IFrame Player API code asynchronously.
-  
+
   var parentwidth = document.getElementById("left-frame").offsetWidth;
-  document.getElementById("ad").setAttribute("style","height:"+String(parentwidth/1.5)+"px;");
+  document.getElementById("ad").setAttribute("style","height:"+String(parentwidth/1.7)+"px;");
   var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/player_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -60,9 +76,10 @@
   var player;
   function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
-      height: String(parentwidth/1.5),
+      height: String(parentwidth/1.7),
       width: '100%',
       videoId: 'QX_X3hlaahk'
     });
   }
+  $(document).on('page:load',onYouTubePlayerAPIReady);
 </script>    
