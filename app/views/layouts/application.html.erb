@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript">
 
-</script>
 <head>
   <title>Smartcoos</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script>
+    $(function (){
+    $().timelinr({
+      arrowKeys: 'true'
+    })
+  });
+  </script>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <header align="center"> 
     <%=render "layouts/header"%>
   </header>
-  <div id="myTimeline"></div>
+  <div id="timeline">
+    <%=render "timeline"%>
+  </div>
     <div class="row">
       <div class="col-md-2" align="center">
       </div>
@@ -88,5 +98,6 @@
     });
   }
   $(document).on('page:load',onYouTubePlayerAPIReady);
+  $(document).on('page:load',timeliner);
 
 </script>    
